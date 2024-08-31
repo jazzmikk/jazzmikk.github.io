@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>minsuewebtoon</title>
+        <style>
+            img {
+                display: block;
+                margin-bottom: 10px; /* 이미지 간격 */
+                width: 50%; /* 원하는 이미지 크기 설정 */
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>오로지 <strong>"이제는 말할 수 있다! 현장실습 리얼후기"</strong>만을 위한 웹페이지 입니다.</p>
+        <form action="#">
+            <>
+                <legend>기본 정보</legend>
+                <p>
+                    <label for="userid">이름</label>
+                    <input type="text" id="userid" placeholder="이름을 입력해주세요.">
+                    <!--placeholder는 입력값에 대한 힌트를 주는 것-->
+                </p>
+                <p>
+                    <label for="userage">나이(윤석열 나이)</label>
+                    <input type="number" id="userage" maxlength="3" placeholder="나이를 입력해주세요.">
+                    <!--maxlength는 글자수 제한하는 것-->
+                </p>
+                <p>
+                    <label for="usertel">전화번호</label>
+                    <input type="tel" id="usertel" placeholder="하이픈을 포함해서 입력해주세요.">
+                </p>
+                <p>
+                    <label for="useremail">이메일</label>
+                    <input type="email" id="useremail" placeholder="골벵이 빼먹지 마라">
+                </p>
+            </fieldset>
+        </form>
+        <img src="./images/hjtoon1.jpg" alt="이미지 1">
+        <img src="./images/hjtoon2.jpg" alt="이미지 2">
+        <img src="./images/hjtoon3.jpg" alt="이미지 3">
+        <img src="./images/hjtoon4.jpg" alt="이미지 4">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>후기</legend>
+                <p>
+                    <label for="title">제목
+                        <input type="text" id="title" name="title">
+                    </label>
+                </p>
+                <p>
+                    <label for="desc">내용 <!--textarea는 inut과 달리 여러줄 입력 가능-->
+                        <textarea id="desc" name="desc"></textarea>
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>이 만화를 알게된 경로</legend>
+                <input type="checkbox" id="ad" name="ad" value="ad">
+                <label for="ad">광고</label><br>
+                <input type="checkbox" id="introdruction" name="introdruction" value="introdruction">
+                <label for="introdruction">지인 소개</label><br>
+                <input type="checkbox" id="rumor" name="rumor" value="rumor" checked>
+                <!--checked속성은 요소를 선택된 상태로 표시하는 것-->
+                <label for="rumor">항간의 소문</label>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
